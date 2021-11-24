@@ -1,2 +1,4 @@
 # BarkingFrog
-project for lesson GameEngines
+Project for GameEngines course
+
+* [Project specification](http://www.agentspace.org/ge/projekty.pdf)
