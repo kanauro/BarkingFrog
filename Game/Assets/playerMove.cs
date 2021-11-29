@@ -15,10 +15,10 @@ public class playerMove : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            this.transform.Translate(-0.1f, 0f, 0.0f);
+            transform.Translate(-0.1f, 0f, 0.0f);
         } else if (Input.GetKey(KeyCode.RightArrow))
         {
-            this.transform.Translate(0.1f, 0.0f, 0.0f);
+            transform.Translate(0.1f, 0.0f, 0.0f);
         }
     }
 }
