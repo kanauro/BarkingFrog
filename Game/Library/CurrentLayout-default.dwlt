@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 677, y: 342}
+  m_MaxSize: {x: 12002, y: 8042}
   vertical: 0
-  controlID: 18
+  controlID: 16
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1240
     height: 731
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 402, y: 342}
+  m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 94
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,10 +169,10 @@ MonoBehaviour:
     y: 0
     width: 1240
     height: 460
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 70
+  controlID: 18
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 306
     height: 460
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -275,8 +275,8 @@ MonoBehaviour:
     y: 0
     width: 296
     height: 731
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -399,9 +399,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 963d0000
-      m_LastClickedID: 15766
-      m_ExpandedIDs: 54fbffff703d0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 54fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -461,9 +461,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.4900783, y: -2.7389915, z: -0.3025639}
+    m_Target: {x: -4.8810563, y: -3.650321, z: -0.9303829}
     speed: 2
-    m_Value: {x: 1.4900783, y: -2.7389915, z: -0.3025639}
+    m_Value: {x: -4.8810563, y: -3.650321, z: -0.9303829}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -510,13 +510,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09163598, y: 0.027780948, z: -0.0025663665, w: 0.9954147}
+    m_Target: {x: 0.056370754, y: 0.0005985435, z: -0.000060929495, w: 0.9984304}
     speed: 2
-    m_Value: {x: 0.0916348, y: 0.02778059, z: -0.0025663334, w: 0.99540186}
+    m_Value: {x: 0.05636959, y: 0.00059853116, z: -0.00006092824, w: 0.9984098}
   m_Size:
-    m_Target: 12.917595
+    m_Target: 26.975462
     speed: 2
-    m_Value: 12.917595
+    m_Value: 26.975462
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -673,14 +673,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\uniba\games\Game
+  m_LastProjectPath: C:\uniba\GameEngines\BarkingFrog\Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 183f0000
-    m_LastClickedID: 16152
-    m_ExpandedIDs: 00000000163f0000183f00001a3f00001c3f0000
+    m_SelectedIDs: 163f0000
+    m_LastClickedID: 16150
+    m_ExpandedIDs: 000000003e3f0000403f0000423f0000443f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -708,7 +708,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000163f0000183f00001a3f00001c3f0000
+    m_ExpandedIDs: 000000003e3f0000403f0000423f0000443f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,8 +733,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f23d0000
-    m_LastClickedInstanceID: 15858
+    m_SelectedInstanceIDs: 46e4ffff
+    m_LastClickedInstanceID: -7098
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300001a820000b47000002e710000c23e000018a8ffff00000000
     m_RenameOverlay:
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 15858
+  m_LastSelectedObjectID: -20088
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52

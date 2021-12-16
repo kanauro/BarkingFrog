@@ -12,10 +12,11 @@ public class playerMove : MonoBehaviour
     private bool is_grounded;
     private bool dir_left = true;
 
-
+    public List<string> items;
 
     void Start()
     {
+        items = new List<string>();
         jump = new Vector3(0f, jumph, 0f);
         rigg = GetComponent<Rigidbody>();
     }
@@ -47,13 +48,22 @@ public class playerMove : MonoBehaviour
             transform.rotation = new Quaternion(0f, 180f, 0f, 0f);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("detail"))
+        {
+            string itemType = other.gameObject.GetComponent<CollectableScript>().itemType;
+            items.Add(itemType);
+            print(items.Count);
+            Destroy(other.gameObject);
+        }
+    }
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "floor")
         {
             is_grounded = true;
         }
-        is_grounded = true;
     }
     void FixedUpdate()
     {
