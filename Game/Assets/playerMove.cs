@@ -9,6 +9,7 @@ public class playerMove : MonoBehaviour
     public float jumpforce;
     private Vector3 jump;
     private Rigidbody rigg;
+    private Collider coll;
     private bool is_grounded;
     private bool dir_left = true;
 
@@ -19,6 +20,7 @@ public class playerMove : MonoBehaviour
         items = new List<string>();
         jump = new Vector3(0f, jumph, 0f);
         rigg = GetComponent<Rigidbody>();
+        coll = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -63,6 +65,11 @@ public class playerMove : MonoBehaviour
         if (other.gameObject.tag == "floor")
         {
             is_grounded = true;
+        }
+        if (other.gameObject.tag == "enemy")
+        {
+            Destroy(coll.gameObject);
+            Application.Quit();
         }
     }
     void FixedUpdate()
