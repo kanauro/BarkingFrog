@@ -6,6 +6,7 @@ public class EnemyMovementScript : MonoBehaviour
 {
     public float speed;
     private Rigidbody rigg;
+/*    Health healthScript = otherGameObject.GetComponent<Health>();*/
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class EnemyMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(speed, 0f, 0f);
+        //transform.position += new Vector3(speed, 0f, 0f);
     }
     private void OnCollisionEnter(Collision other)
     {
@@ -23,5 +24,9 @@ public class EnemyMovementScript : MonoBehaviour
         {
             speed *= -1;
         }
+/*        if (other.gameObject.tag == "Player")
+        {
+            healthScript.damageHealth(10);
+        }*/
     }
 }
