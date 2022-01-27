@@ -13,7 +13,7 @@ public class PlayerContoller : MonoBehaviour
     public LayerMask ground;
     
     private bool _isGrounded = true;
-    private bool _isRunning = false;
+    private int _isRunning = 0;
     private int _direction = -1;
     private int _jump = 0;
     private Transform _groundChecker;
@@ -42,19 +42,19 @@ public class PlayerContoller : MonoBehaviour
         {
             transform.localRotation = Quaternion.Euler(new Vector3(0, -90, 0));
             _direction = -1;
-            _isRunning = true;
+            _isRunning += 1;
         } 
-        else if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             transform.localRotation = Quaternion.Euler(new Vector3(0, 90, 0));
             _direction = 1;
-            _isRunning = true;
+            _isRunning += 1;
         }
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) 
         {
-            _isRunning = false;
+            _isRunning -= 1;
         }
-        if (_isRunning)
+        if (_isRunning > 0)
         {
             x = _direction * speed * Time.deltaTime;
             _rigidbody.MovePosition(transform.position + new Vector3(x, 0, 0));
@@ -64,7 +64,7 @@ public class PlayerContoller : MonoBehaviour
             _animator.SetBool(IsJumping, true);
             _rigidbody.AddForce(transform.up * jumpHeight);
         }
-        _animator.SetBool(IsRunning, Input.GetAxisRaw("Horizontal") != 0);
+        _animator.SetBool(IsRunning, _isRunning > 0);
         _animator.SetBool(IsJumping, !_isGrounded);
     }
 
@@ -76,5 +76,6 @@ public class PlayerContoller : MonoBehaviour
             _items.Add(itemType);
             Destroy(other.gameObject);
         }
+       
     }
 }
