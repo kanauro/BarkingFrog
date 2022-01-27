@@ -13,6 +13,8 @@ public class PlayerContoller : MonoBehaviour
     public LayerMask ground;
     
     private bool _isGrounded = true;
+    private bool _isRunning = false;
+    private int _direction = -1;
     private int _jump = 0;
     private Transform _groundChecker;
 
@@ -39,23 +41,29 @@ public class PlayerContoller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             transform.localRotation = Quaternion.Euler(new Vector3(0, -90, 0));
-            x = -1 * speed * Time.deltaTime;
+            _direction = -1;
+            _isRunning = true;
         } 
         else if (Input.GetKeyDown(KeyCode.D))
         {
             transform.localRotation = Quaternion.Euler(new Vector3(0, 90, 0));
-            x = speed * Time.deltaTime;
+            _direction = 1;
+            _isRunning = true;
         }
-
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) 
+        {
+            _isRunning = false;
+        }
+        if (_isRunning)
+        {
+            x = _direction * speed * Time.deltaTime;
+            _rigidbody.MovePosition(transform.position + new Vector3(x, 0, 0));
+        }
         if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
         {
             _animator.SetBool(IsJumping, true);
-            _jump = 1;
+            _rigidbody.AddForce(transform.up * jumpHeight);
         }
-
-        Vector3 move = new Vector3(x, _jump*jumpHeight*Time.deltaTime, 0);
-        _rigidbody.velocity = move;
-        _jump = 0;
         _animator.SetBool(IsRunning, Input.GetAxisRaw("Horizontal") != 0);
         _animator.SetBool(IsJumping, !_isGrounded);
     }
