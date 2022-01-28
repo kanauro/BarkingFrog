@@ -188,9 +188,10 @@ GameObject:
   - component: {fileID: 178532378}
   - component: {fileID: 178532377}
   - component: {fileID: 178532376}
+  - component: {fileID: 178532379}
   m_Layer: 0
   m_Name: Scraps
-  m_TagString: Untagged
+  m_TagString: ItemTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,6 +274,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &178532379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178532375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.57, y: 7.08, z: 2.3172348}
+  m_Center: {x: 0, y: 0, z: 0.11128342}
 --- !u!1 &192976520
 GameObject:
   m_ObjectHideFlags: 0
