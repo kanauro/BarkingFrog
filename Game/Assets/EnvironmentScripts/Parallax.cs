@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Parallax : MonoBehaviour
@@ -12,11 +10,11 @@ public class Parallax : MonoBehaviour
     {
         startpos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
-        parallaxEffect = (9 - GetComponent<SpriteRenderer>().sortingOrder)*0.1f;
+        parallaxEffect = (10 - GetComponent<SpriteRenderer>().sortingOrder)/10.0f;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float distance = (camera.transform.position.x * parallaxEffect);
         transform.position = new Vector3(startpos + distance, transform.position.y, transform.position.z);

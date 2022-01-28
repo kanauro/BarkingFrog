@@ -450,7 +450,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306321275}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4ca5281606df544a89f7fab4ef92fa5, type: 3}
   m_Name: 
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366745022}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4ca5281606df544a89f7fab4ef92fa5, type: 3}
   m_Name: 
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483850414}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4ca5281606df544a89f7fab4ef92fa5, type: 3}
   m_Name: 
@@ -781,6 +781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 527387015}
   - component: {fileID: 527387016}
+  - component: {fileID: 527387017}
   m_Layer: 0
   m_Name: Sunlight
   m_TagString: Untagged
@@ -853,6 +854,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &527387017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527387014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4ca5281606df544a89f7fab4ef92fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 963194225}
 --- !u!1 &629434500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1744,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3461806475235747402, guid: 0a77f31bfc89abd49b996f951a73620e, type: 3}
+      propertyPath: jumpHeight
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3999328240977174569, guid: 0a77f31bfc89abd49b996f951a73620e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1777,6 +1795,10 @@ PrefabInstance:
     - target: {fileID: 4380779179693685395, guid: 0a77f31bfc89abd49b996f951a73620e, type: 3}
       propertyPath: m_Name
       value: Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016708326588955219, guid: 0a77f31bfc89abd49b996f951a73620e, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a77f31bfc89abd49b996f951a73620e, type: 3}
