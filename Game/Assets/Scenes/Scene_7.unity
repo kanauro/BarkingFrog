@@ -510,7 +510,6 @@ GameObject:
   m_Component:
   - component: {fileID: 556468566}
   - component: {fileID: 556468568}
-  - component: {fileID: 556468567}
   m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
@@ -532,19 +531,6 @@ Transform:
   m_Father: {fileID: 162753750}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &556468567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556468565}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4ca5281606df544a89f7fab4ef92fa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 212473904}
 --- !u!212 &556468568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -844,11 +830,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 175380109084766676, guid: 7999e201f69575e4b828c35817f032d1, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: 10.57
       objectReference: {fileID: 0}
     - target: {fileID: 175380110181377131, guid: 7999e201f69575e4b828c35817f032d1, type: 3}
       propertyPath: m_LocalScale.z
       value: 7.043026
+=======
+      value: 10.39
+>>>>>>> 22a2436a60f70350e31d64ecc583fa81eda5f3bd
       objectReference: {fileID: 0}
     - target: {fileID: 175380110181377131, guid: 7999e201f69575e4b828c35817f032d1, type: 3}
       propertyPath: m_LocalPosition.x
