@@ -1486,7 +1486,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2083641834}
   - component: {fileID: 2083641833}
-  - component: {fileID: 2083641835}
   - component: {fileID: 2083641837}
   - component: {fileID: 2083641836}
   m_Layer: 0
@@ -1535,7 +1534,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 0771fd3b3fcd36543ab05edd6d56945c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1561,19 +1560,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2083641835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083641832}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4ca5281606df544a89f7fab4ef92fa5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 1024895315}
 --- !u!65 &2083641836
 BoxCollider:
   m_ObjectHideFlags: 0
